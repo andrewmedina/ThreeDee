@@ -3,31 +3,31 @@ Teammate: Drew Marten Medina (amm2478)
 
 ## Lexical Grammar
 The scanner for the 3D printing language, ThreeDee, recognizes the following States:
-- START
+- `START`
   - This indicates the beginning of any file
-  - It can be followed by a COMMAND or PRINT
-- COMMAND
-  - This indicates an action like "CREATE" or "SET" and must come first (exception is PRINT)
-  - It can be followed by a PARAMETER or SETTING
-- PARAMETER
+  - It can be followed by a `COMMAND` or `PRINT`
+- `COMMAND`
+  - This indicates an action like "CREATE" or "SET" and must come first (exception is `PRINT`)
+  - It can be followed by a `PARAMETER` or `SETTING`
+- `PARAMETER`
   - This indicates an intensity like "STRONG" or "LOW"
-  - It can be followed by NEW_LINE or SETTING
-- NEW_LINE
+  - It can be followed by `NEW_LINE` or `SETTING`
+- `NEW_LINE`
   - This indicates the end of that line's command and the line can be read fully
-  - It can be followed by COMMAND or PRINT
-- SETTING
+  - It can be followed by `COMMAND` or `PRINT`
+- `SETTING`
   - This indicates an attribute like "INFILL" or "LAYER_HEIGHT"
-  - It can be followed by INTEGER, or NEW_LINE, or PARAMETER
-- INTEGER
+  - It can be followed by `INTEGER`, or `NEW_LINE`, or `PARAMETER`
+- `INTEGER`
   - This indicates a number
-  - It can be followed by INTEGER, NEW_LINE, or OPERATOR
-- OPERATOR
+  - It can be followed by `INTEGER`, `NEW_LINE`, or `OPERATOR`
+- `OPERATOR`
   - This indicates a mathematical operation like addition or multiplication
-  - It can be followed by INTEGER or PARAMETER
-- PRINT
+  - It can be followed by `INTEGER` or `PARAMETER`
+- `PRINT`
   - This indicates a standalone command that (in the final code) will return all specs
-  - It can be followed by a NEW_LINE
-- LEXICAL_ERROR
+  - It can be followed by a `NEW_LINE`
+- `LEXICAL_ERROR`
   - This is thrown whenever unexpected keywords are encountered
 
 ## Usage
