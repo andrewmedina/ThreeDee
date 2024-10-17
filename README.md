@@ -1,4 +1,4 @@
-# ThreeDee Scanner README
+# The ThreeDee (.ddd) Language
 Teammate: Drew Marten Medina (amm2478)
 
 ## Lexical Grammar
