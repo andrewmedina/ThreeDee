@@ -4,7 +4,7 @@ Teammate: Drew Marten Medina (amm2478)
 ## Lexical Grammar
 The scanner for the 3D printing language, ThreeDee, recognizes the following States:
 - `START`
-  - This indicates the beginning of any file
+  - This indicates the beginning of any file and is always the first State
   - It can be followed by a `COMMAND` or `PRINT`
 - `COMMAND`
   - This indicates an action like "CREATE" or "SET" and must come first (exception is `PRINT`)
