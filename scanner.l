@@ -50,7 +50,7 @@ void print_transition(State token_type, const char* token_value) {
     }
     // Process the transition based on whether it's valid or not and print the appropriate message as well as revise the current state
     if (valid) {
-        printf("Transitioned from %s to %s with token: <%s, %s>\n", state_name(current_state), state_name(token_type), state_name(token_type), token_value);
+        printf("VALID transition from %s to %s with token: <%s, %s>\n", state_name(current_state), state_name(token_type), state_name(token_type), token_value);
         if      (token_type == COMMAND)   current_state = COMMAND;
         else if (token_type == INTEGER)   current_state = INTEGER;
         else if (token_type == NEW_LINE)  current_state = NEW_LINE;
@@ -59,7 +59,7 @@ void print_transition(State token_type, const char* token_value) {
         else if (token_type == PRINT)     current_state = PRINT;
         else if (token_type == SETTING)   current_state = SETTING;
     } else {
-        printf("Invalid transition from %s with token: <%s, %s>\n", state_name(current_state), state_name(token_type), token_value);
+        printf("INVALID transition from %s with token: <%s, %s>\n", state_name(current_state), state_name(token_type), token_value);
         current_state = LEXICAL_ERROR;
     }
 }
