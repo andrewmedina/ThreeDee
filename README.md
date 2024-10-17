@@ -38,7 +38,7 @@ The scanner for the 3D printing language, ThreeDee, recognizes the following Sta
    ./run_scanner.sh test_1.ddd
    ```
 
-## TEST OUTPUTS
+## Test Outputs
 Five test case files were created in `.ddd` (ThreeDee) format and the following are their inputs and expected outputs:
 
 ### `test_1.ddd`
