@@ -28,24 +28,24 @@ void print_transition(State token_type, const char* token_value) {
         // COMMAND must be followed by a PARAMETER or SETTING
         valid = 1;
     }
-    else if (current_state == INTEGER && (token_type == INTEGER || token_type == NEW_LINE || token_type == OPERATOR)) {
-        // INTEGER must followed by INTEGER, NEW_LINE, or OPERATOR
-        valid = 1;
-    }
-    else if (current_state == PRINT && token_type == NEW_LINE) {
-        // PRINT must be followed by NEW_LINE
+    else if (current_state == PARAMETER && (token_type == NEW_LINE || token_type == OPERATOR || token_type == SETTING)) {
+        // PARAMETER must be followed by NEW_LINE or SETTING
         valid = 1;
     }
     else if (current_state == OPERATOR && (token_type == INTEGER || token_type == PARAMETER)) {
         // OPERATOR must be followed by INTEGER or PARAMETER
         valid = 1;
     }
-    else if (current_state == PARAMETER && (token_type == NEW_LINE || token_type == OPERATOR || token_type == SETTING)) {
-        // PARAMETER must be followed by NEW_LINE or SETTING
+    else if (current_state == INTEGER && (token_type == INTEGER || token_type == NEW_LINE || token_type == OPERATOR)) {
+        // INTEGER must followed by INTEGER, NEW_LINE, or OPERATOR
         valid = 1;
     }
     else if (current_state == SETTING && (token_type == INTEGER || token_type == NEW_LINE || token_type == PARAMETER)) {
         // SETTING must be followed by INTEGER, NEW_LINE, or PARAMETER
+        valid = 1;
+    }
+    else if (current_state == PRINT && token_type == NEW_LINE) {
+        // PRINT must be followed by NEW_LINE
         valid = 1;
     }
     // Process the transition based on whether it's valid or not and print the appropriate message as well as revise the current state
