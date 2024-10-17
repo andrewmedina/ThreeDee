@@ -60,7 +60,7 @@ void print_transition(State token_type, const char* token_value) {
         else if (token_type == SETTING)   current_state = SETTING;
     } else {
         printf("INVALID transition from %s with token: <%s, %s>\n", state_name(current_state), state_name(token_type), token_value);
-        // Every transition following this will be marked invalid. In the future, error handling will be expanded to fill resolve these more effectively.
+        // Every transition following this will be marked invalid. In the future, error handling will be expanded to resolve these more effectively.
         current_state = LEXICAL_ERROR;
     }
 }
