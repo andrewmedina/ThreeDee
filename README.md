@@ -50,16 +50,16 @@ PRINT
 ```
 Output:
 ```
-Transitioned from START to COMMAND with token: <COMMAND, CREATE>
-Transitioned from COMMAND to PARAMETER with token: <PARAMETER, STRONG>
-Transitioned from PARAMETER to SETTING with token: <SETTING, INFILL>
-Transitioned from SETTING to INTEGER with token: <INTEGER, 50>
-Transitioned from INTEGER to NEW_LINE with token: <NEW_LINE, \n>
-Transitioned from NEW_LINE to COMMAND with token: <COMMAND, SET>
-Transitioned from COMMAND to SETTING with token: <SETTING, SPEED>
-Transitioned from SETTING to PARAMETER with token: <PARAMETER, HIGH>
-Transitioned from PARAMETER to NEW_LINE with token: <NEW_LINE, \n>
-Transitioned from NEW_LINE to PRINT with token: <PRINT, PRINT>
+VALID transition from START to COMMAND with token: <COMMAND, CREATE>
+VALID transition from COMMAND to PARAMETER with token: <PARAMETER, STRONG>
+VALID transition from PARAMETER to SETTING with token: <SETTING, INFILL>
+VALID transition from SETTING to INTEGER with token: <INTEGER, 50>
+VALID transition from INTEGER to NEW_LINE with token: <NEW_LINE, \n>
+VALID transition from NEW_LINE to COMMAND with token: <COMMAND, SET>
+VALID transition from COMMAND to SETTING with token: <SETTING, SPEED>
+VALID transition from SETTING to PARAMETER with token: <PARAMETER, HIGH>
+VALID transition from PARAMETER to NEW_LINE with token: <NEW_LINE, \n>
+VALID transition from NEW_LINE to PRINT with token: <PRINT, PRINT>
 ```
 
 ### `test_2.ddd`
@@ -70,13 +70,13 @@ PRINT
 ```
 Output:
 ```
-Transitioned from START to COMMAND with token: <COMMAND, SET>
-Transitioned from COMMAND to SETTING with token: <SETTING, INFILL>
-Transitioned from SETTING to PARAMETER with token: <PARAMETER, LOW>
-Transitioned from PARAMETER to OPERATOR with token: <OPERATOR, +>
-Transitioned from OPERATOR to INTEGER with token: <INTEGER, 10>
-Transitioned from INTEGER to NEW_LINE with token: <NEW_LINE, \n>
-Transitioned from NEW_LINE to PRINT with token: <PRINT, PRINT>
+VALID transition from START to COMMAND with token: <COMMAND, SET>
+VALID transition from COMMAND to SETTING with token: <SETTING, INFILL>
+VALID transition from SETTING to PARAMETER with token: <PARAMETER, LOW>
+VALID transition from PARAMETER to OPERATOR with token: <OPERATOR, +>
+VALID transition from OPERATOR to INTEGER with token: <INTEGER, 10>
+VALID transition from INTEGER to NEW_LINE with token: <NEW_LINE, \n>
+VALID transition from NEW_LINE to PRINT with token: <PRINT, PRINT>
 ```
 
 ### `test_3.ddd`
@@ -87,11 +87,11 @@ PRINT
 ```
 Output:
 ```
-Transitioned from START to COMMAND with token: <COMMAND, SET>
-Transitioned from COMMAND to SETTING with token: <SETTING, SPEED>
-Transitioned from SETTING to PARAMETER with token: <PARAMETER, LOW>
-Transitioned from PARAMETER to NEW_LINE with token: <NEW_LINE, \n>
-Transitioned from NEW_LINE to PRINT with token: <PRINT, PRINT>
+VALID transition from START to COMMAND with token: <COMMAND, SET>
+VALID transition from COMMAND to SETTING with token: <SETTING, SPEED>
+VALID transition from SETTING to PARAMETER with token: <PARAMETER, LOW>
+VALID transition from PARAMETER to NEW_LINE with token: <NEW_LINE, \n>
+VALID transition from NEW_LINE to PRINT with token: <PRINT, PRINT>
 ```
 
 ### `test_4.ddd`
@@ -103,17 +103,17 @@ PRINT
 ```
 Output:
 ```
-Transitioned from START to COMMAND with token: <COMMAND, CREATE>
-Transitioned from COMMAND to PARAMETER with token: <PARAMETER, MEDIUM>
-Transitioned from PARAMETER to SETTING with token: <SETTING, SPEED>
-Transitioned from SETTING to NEW_LINE with token: <NEW_LINE, \n>
-Transitioned from NEW_LINE to COMMAND with token: <COMMAND, SET>
-Transitioned from COMMAND to SETTING with token: <SETTING, INFILL>
-Transitioned from SETTING to PARAMETER with token: <PARAMETER, HIGH>
-Transitioned from PARAMETER to OPERATOR with token: <OPERATOR, *>
-Transitioned from OPERATOR to INTEGER with token: <INTEGER, 10>
-Transitioned from INTEGER to NEW_LINE with token: <NEW_LINE, \n>
-Transitioned from NEW_LINE to PRINT with token: <PRINT, PRINT>
+VALID transition from START to COMMAND with token: <COMMAND, CREATE>
+VALID transition from COMMAND to PARAMETER with token: <PARAMETER, MEDIUM>
+VALID transition from PARAMETER to SETTING with token: <SETTING, SPEED>
+VALID transition from SETTING to NEW_LINE with token: <NEW_LINE, \n>
+VALID transition from NEW_LINE to COMMAND with token: <COMMAND, SET>
+VALID transition from COMMAND to SETTING with token: <SETTING, INFILL>
+VALID transition from SETTING to PARAMETER with token: <PARAMETER, HIGH>
+VALID transition from PARAMETER to OPERATOR with token: <OPERATOR, *>
+VALID transition from OPERATOR to INTEGER with token: <INTEGER, 10>
+VALID transition from INTEGER to NEW_LINE with token: <NEW_LINE, \n>
+VALID transition from NEW_LINE to PRINT with token: <PRINT, PRINT>
 ```
 
 ### `test_5.ddd` (error testing)
@@ -125,16 +125,16 @@ PRINT THISWONTWORK
 ```
 Output:
 ```
-Transitioned from START to COMMAND with token: <COMMAND, CREATE>
-Transitioned from COMMAND to PARAMETER with token: <PARAMETER, FAST>
-Transitioned from PARAMETER to SETTING with token: <SETTING, LAYER_HEIGHT>
-Transitioned from SETTING to NEW_LINE with token: <NEW_LINE, \n>
-Transitioned from NEW_LINE to COMMAND with token: <COMMAND, SET>
-Transitioned from COMMAND to SETTING with token: <SETTING, INFILL>
-Transitioned from SETTING to PARAMETER with token: <PARAMETER, LOW>
-Transitioned from PARAMETER to NEW_LINE with token: <NEW_LINE, \n>
-Transitioned from NEW_LINE to PRINT with token: <PRINT, PRINT>
-Invalid transition from PRINT with token: <LEXICAL_ERROR, THISWONTWORK>
+VALID transition from START to COMMAND with token: <COMMAND, CREATE>
+VALID transition from COMMAND to PARAMETER with token: <PARAMETER, FAST>
+VALID transition from PARAMETER to SETTING with token: <SETTING, LAYER_HEIGHT>
+VALID transition from SETTING to NEW_LINE with token: <NEW_LINE, \n>
+VALID transition from NEW_LINE to COMMAND with token: <COMMAND, SET>
+VALID transition from COMMAND to SETTING with token: <SETTING, INFILL>
+VALID transition from SETTING to PARAMETER with token: <PARAMETER, LOW>
+VALID transition from PARAMETER to NEW_LINE with token: <NEW_LINE, \n>
+VALID transition from NEW_LINE to PRINT with token: <PRINT, PRINT>
+INVALID transition from PRINT with token: <LEXICAL_ERROR, THISWONTWORK>
 ```
 
 ## Lexical Errors
