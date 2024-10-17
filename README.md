@@ -33,7 +33,10 @@ The scanner for the 3D printing language, ThreeDee, recognizes the following Sta
 ## Usage
 1. Install Flex (`brew install Flex`) and GCC (`brew install gcc`).
 2. Run `chmod +x run_scanner.sh` to make the scanner executable.
-3. Execute the scanner script with a `.ddd` file as the argument, e.g. `./run_scanner.sh test_1.ddd`.
+3. Execute the scanner script with a `.ddd` file as the argument, e.g.:
+   ```
+   ./run_scanner.sh test_1.ddd
+   ```
 
 ## TEST OUTPUTS
 Five test case files were created in `.ddd` (ThreeDee) format and the following are their inputs and expected outputs:
