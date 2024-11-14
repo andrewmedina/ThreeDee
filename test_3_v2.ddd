@@ -1,0 +1,8 @@
+CREATE a HIGH
+WHILE (a >= LOW) {
+    IF (a == MEDIUM) {
+        PRINT a
+    }
+    a = a - 2
+}
+PRINT a

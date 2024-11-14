@@ -1,0 +1,8 @@
+CREATE a LOW
+CREATE b MEDIUM
+IF (a < b) { 
+    PRINT a
+} ELSE {
+    SET INFILL LOW
+    PRINT b
+}

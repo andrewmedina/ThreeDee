@@ -1,0 +1,8 @@
+CREATE a HIGH
+IF (a < 10) {
+    PRINT a
+}
+WHILE (a > 0) {
+    a = a - 1
+}
+PRINT a
