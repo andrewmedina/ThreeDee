@@ -9,9 +9,9 @@
 
 ## Usage (same as before)
 
-1. Install Flex (brew install Flex) and GCC (brew install gcc).
-2. Run chmod +x run_scanner.sh to make the scanner executable.
-3. Execute the scanner script with a .ddd file as the argument, e.g.:
+1. Install Flex (`brew install Flex`) and GCC (`brew install gcc`).
+2. Run `chmod +x run_scanner.sh` to make the scanner executable.
+3. Execute the scanner script with a `.ddd` file as the argument, e.g.:
 
 ```
 ./run_scanner.sh test_1_v2.ddd
