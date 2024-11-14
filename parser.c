@@ -290,7 +290,7 @@ ASTNode *parse_statement(int *i)
     }
 }
 
-// Parse a block of statements enclosed in curly brace '{ }' or a single statement
+// Parse a block of statements enclosed in curly braces or a single statement
 ASTNode *parse_statement_block(int *i)
 {
     // Check if the current token is an opening curly brace
