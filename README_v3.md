@@ -214,4 +214,4 @@ M117 Z7 ; Printed value of Z
 
 ## Simulating the generated GCode
 
-In order to verify the outputs of the generated G-code, please use https://ncviewer.com and paste the code into the section marked "GCode File", zoom out to get a full view of the provided grid, and then step through from start to finish in its simulation by using the play/stop/next buttons at the bottom of the screen. I have provided a demonstration of this in the video submitted for this project.
+In order to verify the outputs of the generated G-code, please use https://ncviewer.com and paste the code into the section marked "GCode File", zoom out to get a full view of the provided grid, and then step through from start to finish in its simulation by using the play/stop/next buttons at the bottom of the screen. I have provided a demonstration of this in the video (see V3DemoLink) submitted for this project.
