@@ -42,10 +42,10 @@ void add_token(State type, const char *value) {
 "!="                                          { add_token(NOT_EQUAL, yytext); }
 
 [0-9]+                                        { add_token(INTEGER, yytext); }
-[a-z][a-z0-9_]*                               { add_token(IDENTIFIER, yytext); }  // Identifiers: lowercase only
-[A-Z][a-zA-Z0-9_]*                            { add_token(LEXICAL_ERROR, yytext); } // Invalid identifiers: uppercase start
+"X"|"Y"|"Z"                                   { add_token(IDENTIFIER, yytext); }  // Identifiers: X, Y, or Z
+[A-Za-z][a-zA-Z0-9_]*                         { add_token(LEXICAL_ERROR, yytext); } // Invalid identifiers: uppercase start
 \n                                            { add_token(NEW_LINE, "\\n"); }
-"+"|"-"|"*"|"÷"                               { add_token(OPERATOR, yytext); }
+"+"|"-"|"*"|"/"                               { add_token(OPERATOR, yytext); }
 
 [ \t\r]+                                      { /* Ignore whitespace */ }
 .                                             { add_token(LEXICAL_ERROR, yytext); }  // Any other character is an error
