@@ -1,0 +1,14 @@
+CREATE X HIGH
+CREATE Y LOW
+CREATE Z MEDIUM
+WHILE (X > 1) {
+    IF (X == 4) {
+        Y = Y + 5
+        Z = Z + 2
+        PRINT X
+    }
+    X = X - 1
+    PRINT Y
+}
+PRINT X
+PRINT Z

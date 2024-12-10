@@ -1,0 +1,7 @@
+CREATE X LOW
+CREATE Y MEDIUM
+IF (Y <= 5) {
+    Y = Y * 3
+    PRINT X
+}
+PRINT Y

@@ -1,0 +1,9 @@
+CREATE X HIGH
+CREATE Z LOW
+PRINT Z
+WHILE (X >= 2) {
+    X = X - 2
+    Z = Z + 1
+    PRINT X
+}
+PRINT Z
