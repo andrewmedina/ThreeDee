@@ -55,7 +55,7 @@ _Note: these outputs are truncated to only include the generated GCode but on th
 CREATE X HIGH
 CREATE Y MEDIUM
 CREATE Z LOW
-X = Y - 1
+X = X - 1
 PRINT X
 PRINT Y
 PRINT Z
