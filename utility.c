@@ -39,9 +39,9 @@ int evaluate_condition(int left, const char *operator, int right)
         return operator[1] == '=' ? left >= right : left > right;
     case '<':
         return operator[1] == '=' ? left <= right : left < right;
-    case '=': // this assumes that the following character is also '='
+    case '=': // This assumes that the following character is also '='
         return left == right;
-    case '!': // this assumes that the following character is '='
+    case '!': // This assumes that the following character is '='
         return left != right;
     default:
         fprintf(stderr, "Error: Unsupported operator '%s'\n", operator);
