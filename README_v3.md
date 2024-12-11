@@ -145,7 +145,7 @@ _Note: this is intentionally supposed to fail and log where the error took place
 
 ```
 CREATE Z MEDIUM
-WHILE (Z >= 1) {
+WHILE (Z > 1) {
     Z = Z / 0
 }
 PRINT Z
@@ -166,7 +166,7 @@ Error: Division by zero
 CREATE X HIGH
 CREATE Y LOW
 CREATE Z MEDIUM
-WHILE (X > 1) {
+WHILE (X >= 1) {
     IF (X == 4) {
         Y = Y + 5
         Z = Z + 2
