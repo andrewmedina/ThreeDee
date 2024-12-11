@@ -1,5 +1,5 @@
 CREATE Z MEDIUM
-WHILE (Z >= 1) {
+WHILE (Z > 1) {
     Z = Z / 0
 }
 PRINT Z
