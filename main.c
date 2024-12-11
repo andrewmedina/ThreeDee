@@ -13,7 +13,7 @@ int main(int argc, char **argv)
     ASTNode *ast = build_ast();
     printf("Abstract Syntax Tree:\n");
     print_ast(ast, 0);
-    printf("Generated G-code:\n");
+    printf("\nGenerated G-code:\n");
     generate_gcode(ast);
     return 0;
 }
