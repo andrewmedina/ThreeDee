@@ -80,7 +80,7 @@ M117 Z1 ; Printed value of Z
 ```
 CREATE X LOW
 CREATE Y MEDIUM
-IF (Y <= 5) {
+IF (Y == 5) {
     Y = Y * 3
     PRINT X
 }
